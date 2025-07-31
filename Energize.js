@@ -1,11 +1,4 @@
-const menu = document.getElementById('links');
-const toggleButton= document.querySelector('.menu-toggle');
-const toggleIcon = toggleButton.querySelector('i');
-const navLinks = document.querySelector('.nav-links');
+const menuToggle = document.getElementById('.menu-toggle');
+const navLinks = document.getElementById('.nav-links');
 
-function toggleMenu() {
-    menu.classList.toggle('show');
-    const expanded = menu.classList.contains('show');
-    toggleIcon.classList.toggle('fa-bars', !expanded);
-    toggleIcon.classList.toggle('fa-times', expanded);
-    navLinks.classList.toggle('show', expanded);
+menuToggle.addEventListener('click', () => {navLinks.classList.toggle("active")}); 

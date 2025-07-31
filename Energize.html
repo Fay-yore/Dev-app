@@ -6,50 +6,47 @@
     <title> Fitness App </title>
     <link rel="stylesheet" href="Style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"> 
 </head>
 
 <body>
-    
-    <nav class="responsive-nav"> 
-        <!--Logo-->
 
-    <div>
+        <!--Logo-->
+    <nav>
+    <div class="logo">
         <a href="Energize.html" class="logo">
             <img src="Resources/logo.png" alt="Fitness App Logo">
         </a>
     </div>
-
+    
     <!--menu toggle button-->
 
-    <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="menu-toggle">
        <i class="fas fa-bars"></i>
     </div>      
 
-    <div class="nav-links">
+    <div class="links">
         <!--Navigation Links-->
-        <ul id="links">
+        <ul id="nav-links">
             <li><a href="Energize.html">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Log In</a></li>
         </ul>
     </div>
 
     </nav>
 
-<div> 
 
         <!-- Hero-bg Section -->
     <section class="hero">
         <div class="herobg-content"> 
            <h1> Transform Your Fitness Journey. Start Today! </h1> 
            <p>Track workouts, monitor progress, and achieve your goals with our all-in-one fitness app.</p>
-        </div>
-    </div>
-
     <div class="hero-buttons"> 
-        <a class="first button" href="#">Get Started</a> 
-        <a class="second button" href="#">Book a Demo</a>
+        <a class="button primary" href="#">Get Started</a> 
+        <a class="button secondary" href="#">Book a Demo</a>
+    </div> 
     </div> 
 
    <div class="hero-bg image">
@@ -57,22 +54,24 @@
    </div>
 </section>
     
-      <!--App-Function-->
+      <!--App Function-->
       <section class="app-function">
           <h2> Discover how our app works and get fit in no time </h2>
           <img src="Resources/video-preview.png" alt="App-Function Video Preview">
           <div>
-             <a class="first button" href="Energize.html#">Get Started</a>
+             <a class="button primary" href="Energize.html#">Get Started</a>
           </div>
         </section>
 
     <!--Reviews-->
     <section class="reviews">
         <h3> Hear from our satisfied users who transformed their lives </h3>
+
         <article class="review">
             <blockquote>
                 "I've lost 10 pounds in just a month! This app keeps me motivated and on track with my fitness goals."
             </blockquote>
+            <br>
             <p class="customer">Alice Johnson<br><span >Health Coach</span></p>
         </article>
 
@@ -80,6 +79,7 @@
             <blockquote>
                 "The workout plans are easy to follow, and the progress tracking feature is incredibly helpful. I feel stronger every day!"
             </blockquote>
+            <br>
             <p class="customer">Mark Thompson<br><span>Personal Trainer</span></p>
         </article>
 
@@ -87,6 +87,7 @@
             <blockquote>
                 "This app has changed my fitness routine completely. I love the community support and challenges!"
             </blockquote>
+            <br>
             <p class="customer">Sarah Parker<br><span>Fitness Enthusiast</span></p>
         </article>
     </section>
@@ -95,10 +96,10 @@
        <!--Pricing-->
        <section class="pricing">
      <h4> Pricing </h4>
-     <p> Start with our free plan and unlock premium features as you grow. <p/>
+     <p> Start with our free plan and unlock premium features as you grow. </p>
 
-    <div class="pricing-plans">
-    <div class="basic-plan">
+    <div class="plans">
+    <div class="plan basic">
     <h4> Basic </h4>
     <span>Ideal for beginners to track workouts and monitor progress.</span>
     <h4>Free</h4>
@@ -110,12 +111,11 @@
         <li> Nutrition tracker </li>
         <li> Access to community challenges </li>
     </ol>
-
-         <a class="first button" href="Energize.html#">Get Started</a>
+         <a class="button primary" href="Energize.html#">Get Started</a>
 
     </div>
     
-    <div class="pro-plan">
+    <div class="plan pro">
     <h4>Pro</h4>
     <span>Everything in the Basic plan plus advanced features for serious athletes.</span>
     <h4>$29/month</h4>
@@ -128,7 +128,7 @@
         <li> Offline access </li>
     </ol>
 
-         <a class="first-button" href="Energize.html#">Get Started</a>
+         <a class="button primary" href="Energize.html#">Get Started</a>
     </div>
     </div>
         
@@ -146,7 +146,6 @@
     </ul>
 
     <div class="faq-list">
-        
         <div class="faq-item">
             <strong>How can the app help me achieve my fitness goals?</strong>
             <p>The app provides tailored workout plans, tracks your progress, and offers motivation to keep you on track.</p>
@@ -163,22 +162,22 @@
         </div>
 
     </div>
+    </div>
     </section>
-</div>
     
-     
+     <!--Footer-->
     <footer>
         <div class="footer-logo">
     <img src="Resources/logo-white-footer.png" alt="Fitness App footer Logo">
         </div>
 
     <ul class="footer-links">
-        <li> <a href="#">Privacy Policy </a></li>
-        <li> <a href="#">Terms of Service </a></li>
+        <li> <a href="#">Privacy Policy </a></li><br>
+        <li> <a href="#">Terms of Service </a></li><br>
         <li> <a href="#">Contact Us </a></li>
     </ul>
     
-   <p> &copy;2025 Fitness App by Faith Nyorere. All rights reserved. </p> 
+   <p>&copy; 2025 Fitness App by Faith Nyorere. All rights reserved. </p> 
    
     </footer>
 <script src="Energize.js"></script>
