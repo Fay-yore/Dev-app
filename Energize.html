@@ -12,18 +12,19 @@
 <body>
 
         <!--Logo-->
-    <nav>
+    <nav class="navbar">
     <div class="logo">
-        <a href="Energize.html" class="logo">
+        <a href="Energize.html">
             <img src="Resources/logo.png" alt="Fitness App Logo">
         </a>
     </div>
     
     <!--menu toggle button-->
 
-    <div class="menu-toggle">
+    <div class="menu-toggle" id="menu-toggle">
        <i class="fas fa-bars"></i>
     </div>      
+    </nav>
 
     <div class="links">
         <!--Navigation Links-->
@@ -67,6 +68,7 @@
     <section class="reviews">
         <h3> Hear from our satisfied users who transformed their lives </h3>
 
+        <div class="review-cards">   
         <article class="review">
             <blockquote>
                 "I've lost 10 pounds in just a month! This app keeps me motivated and on track with my fitness goals."
@@ -90,6 +92,7 @@
             <br>
             <p class="customer">Sarah Parker<br><span>Fitness Enthusiast</span></p>
         </article>
+        </div>
     </section>
         
 
@@ -102,32 +105,30 @@
     <div class="plan basic">
     <h4> Basic </h4>
     <span>Ideal for beginners to track workouts and monitor progress.</span>
-    <h4>Free</h4>
-    <span>*No credit card needed</span>
+    <h4 class="price">Free</h4>
+    <span class="note-small">*No credit card needed</span>
+    
 
-    <ol>
+    <ul>
         <li> Customizable workout plans </li> 
         <li> Track daily progress </li>
         <li> Nutrition tracker </li>
         <li> Access to community challenges </li>
-    </ol>
+    </ul> <br/>
          <a class="button primary" href="Energize.html#">Get Started</a>
-
     </div>
     
     <div class="plan pro">
     <h4>Pro</h4>
     <span>Everything in the Basic plan plus advanced features for serious athletes.</span>
-    <h4>$29/month</h4>
+    <h4 class="price">$29/month</h4>
 
     <p> Unlock premium features: </p>
-
-    <ol> 
+    <ul> 
         <li> Personalized coaching </li>
         <li> Advanced analytics </li>
         <li> Offline access </li>
-    </ol>
-
+    </ul> <br/>
          <a class="button primary" href="Energize.html#">Get Started</a>
     </div>
     </div>
@@ -135,7 +136,7 @@
         <p class="note"> All prices are in USD and charged per month with applicable taxes added at checkout. </p>
 </section>
 
-    <!--FAQ-->
+    <!--FAQ Section-->
     <section class="faq">
     <h3> Frequently Asked Questions </h3>
 
@@ -160,15 +161,13 @@
             <strong>Is there a free trial available?</strong>
             <p>Yes, you can start with our free Basic plan to explore features before upgrading.</p>
         </div>
-
-    </div>
     </div>
     </section>
     
      <!--Footer-->
     <footer>
         <div class="footer-logo">
-    <img src="Resources/logo-white-footer.png" alt="Fitness App footer Logo">
+           <img src="Resources/logo-white-footer.png" alt="Fitness App footer Logo">
         </div>
 
     <ul class="footer-links">
